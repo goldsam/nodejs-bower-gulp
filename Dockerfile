@@ -1,17 +1,11 @@
 #
 # Node.js w/ Bower & Gulp Dockerfile
 #
-# https://github.com/dockerfile/nodejs-bower-gulp
+# https://github.com/goldsam/nodejs-bower-gulp
 #
 
 # Pull base image.
-FROM dockerfile/nodejs
+FROM atlassian/default-image
 
 # Install Bower & Gulp
 RUN npm install -g bower gulp
-
-# Define working directory.
-WORKDIR /data
-
-# Define default command.
-CMD ["bash"]
